@@ -30,7 +30,7 @@ pipeline {
             steps {
 
                 bat "docker build -t dept_image ."
-                bat "docker run -p 8090:8090 -d --name dept_container dept_image"
+                bat "docker run -p 8081:8081 -d --name dept_container dept_image"
             }
         }
     }
